@@ -1,0 +1,37 @@
+<div class="continer">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h1>User Profile</h1>
+                    <div style="border-radius: 88px">
+                        <img [src]="parent.user.data?.avatar" class="m-2"
+                            style="object-fit: contain; border-radius: 88px;">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-col d-block">
+                            <span class="font-weight-bold text-primary d-block p-2"> First Name </span>
+                            <span class="d-block p-2"> {{parent.user.data?.first_name}}</span>
+                        </div>
+                        <div class="d-flex flex-col d-block">
+                            <span class="font-weight-bold text-primary d-block p-2"> Last Name </span>
+                            <span class="d-block p-2"> {{parent.user.data?.last_name}}</span>
+                        </div>
+                        <div class="d-flex flex-col d-block">
+                            <span class="font-weight-bold text-primary d-block p-2"> Email Address </span>
+                            <span class="d-block p-2"> {{parent.user.data?.email}}</span>
+                        </div>
+                        <div class="d-flex flex-col d-block">
+                                <span class="font-weight-bold text-primary d-block p-2"> User Id </span>
+                                <span class="d-block p-2"> {{parent.user.data?.id}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- {{ user | json }}
+-->
